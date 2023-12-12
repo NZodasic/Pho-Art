@@ -1,0 +1,145 @@
+.container-fluid {
+  padding: 20px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 250px;
+  text-align: center;
+}
+
+.head {
+  display: block;
+  color: black;
+  font-weight: 400;
+  font-size: x-large;
+  background-color: aquamarine;
+  height: 60px;
+  padding: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  font-size: large;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #e9ecef;
+}
+
+.users {
+  width: 200px;
+  height: 270px;
+  background-color: yellowgreen;
+  text-align: center;
+  margin: 15px 0px 15px 50px;
+}
+
+.users p,
+.category p,
+.product p,
+.numoforder p {
+  color: white;
+  font-size: xx-large;
+}
+
+.category {
+  width: 200px;
+  height: 270px;
+  background-color: chocolate;
+  text-align: center;
+  margin: 15px 0px 15px 50px;
+}
+
+.product {
+  width: 200px;
+  height: 270px;
+  background-color: cadetblue;
+  text-align: center;
+  margin: 15px 0px 15px 50px;
+}
+
+.information svg {
+  margin: 8px;
+}
+
+.numoforder {
+  width: 200px;
+  height: 270px;
+  background-color: darkred;
+  text-align: center;
+  margin: 15px 0px 15px 50px;
+}
+
+.lipro {
+  width: calc(220px * 4 + 100px);
+  height: 283px;
+  margin: -5px 40px 0px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header,
+.button {
+  text-align: center;
+  background-color: cornflowerblue;
+  color: #fff;
+  font-size: large;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead .header {
+  font-size: x-large;
+  text-align: start;
+  padding-left: 45px;
+}
+
+thead tr .button {
+  padding-left: 630px;
+}
+
+thead tr button {
+  padding: 5px 10px;
+  border: white;
+  border-radius: 4px;
+}
+
+thead tr button svg {
+  margin: 0 3px 3px;
+}
+
+.productinfo {
+  border-bottom: solid 1.5px grey;
+  font-size: large;
+  text-align: center;
+}
+
+.productinfo th {
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+  max-height: 100px;
+}
+
+button {
+  border: none;
+}

@@ -1,0 +1,544 @@
+header {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 102vh;
+    background-size: cover;
+    background-image: url('imgs/bg.jpg')
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+    }
+}
+@media(max-width: 768px) {
+    .offcanvas-body {
+            background-color: #232b2b;
+    }
+
+    #signup {
+        margin-left: 130px;
+    }
+
+    .goc {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        margin-top: 50px;
+        display: inline-block;
+        align-items: center;
+    }
+
+    #photo,
+    #art,
+    #music {
+        text-align: center;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img1 {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+.usersavt
+{   
+    margin-right: 60px;
+    margin-top: 5px;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.icon
+{
+    color: white    ;
+}
+.avt
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section#welcome {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+#welcome h1 {
+    font-size: 48px;
+}
+.just
+{   
+    margin-bottom: 30px ;
+}
+main {
+    font: black;
+}
+
+#main1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.content {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.goc {
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content p {
+    font-size: large;
+    width: 250px;
+}
+
+#main2 {
+    display: block;
+}
+
+.img1 {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-bottom: 60px;
+    width: 600px;
+    height: auto;
+}
+
+.descript1 {
+    background-color: black;
+    justify-content: flex-start;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.context {
+    flex: 1;
+}
+.searchbox
+{
+    margin-top: 20px;
+    border: none;
+}
+.btn.btn-search
+{   
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: darkcyan;
+}
+.searchinput:focus
+{
+    border-radius: 240px;
+    outline: none;
+    box-shadow: none;
+}
+.btn-search:hover {
+    transform: scale(1.1);
+}
+
+.btn-search:active {
+    transform: scale(1); 
+}
+
+.submenuwrap
+{
+    display: flex;
+    position: fixed;
+    top: 1%;
+    left: 1120px;
+    width: 320px;
+    margin-top: 78px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}   
+.helpmenu
+{
+    height: fit-content;
+}
+.settingmenu,.helpmenu
+{
+    transition: all 0.3s ease-in-out;
+    display: none;
+    width: 320px;
+    background: white;
+    padding: 12px; 
+    border-radius: 15px;
+}
+.submenuwrap.openmenu
+{
+    max-height: 1400px;
+}
+.backset, .backhelp
+{
+    transition: all 0.3s ease-out;
+}
+.submenu
+{
+    transition:all 0.3s ease;
+    width: 320px;
+    background: white;
+    padding: 12px; 
+    border-radius: 14px;
+}
+.userinfo
+{
+    display: flex;
+    align-items: center;
+}
+.userinfo h2
+{
+    padding-left: 60px;
+    font-weight: 500;
+}
+.submenu hr, .rpmenu hr
+{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: black;
+    margin: 13px 0 10px;
+}
+.disable
+{
+    max-height: 0px;
+}
+.submenulink, .rpmenulink 
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+.submenulink p
+{
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.submenulink svg
+{
+    width: 50px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+.submenulink span
+{
+    font-size: 22px;
+}
+.submenulink:hover span
+{
+    transform: translateX(5px);
+}
+.submenulink:hover p{
+    font-weight: 600;
+}
+#header {
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.navbg
+{
+    background: url('imgs/bg.jpg');
+}
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar {
+    width: 1600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+  
+  #navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;        
+}
+  
+  #navbar .navitem li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 520;
+    transition: 0.3s ease;
+    margin-left: 20px;
+    color: white;
+}   
+  
+  #navbar li a:hover,
+  #navbar li a.active {
+    color: white;
+}
+  
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 75%;
+    height: 2px;
+    background: cyan;
+    bottom: 10px;
+    margin-left: 21px;
+    display: block; 
+}
+#navbar h3
+{
+    margin-right: 200px;
+}
+.navitem
+{
+    margin-right: 300px;  
+}
+.reportform
+{
+    position: fixed;
+    max-width: 540px; 
+    display: none;
+    align-items: center;
+    top: 49%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1200;
+}
+.rpmenu
+{
+    transition: all 0.4s ease;
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    width: 540px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+}
+.rpback
+{
+    height: 40px;
+    width: 40px;
+    background: gray;
+}   
+.rpmenulink svg 
+{
+    position:absolute;
+    right: 30px; 
+    top: 20px; 
+    width: 33px;
+    overflow: hidden;
+    border-radius: 250px;
+    fill: #e5e5e5;
+    background: gray;
+}
+.rpmenulink h3
+{
+    font-size: x-large;
+    font-weight: 650;
+    color: black;
+    margin-left: 110px;
+}
+.rpmenucontent
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+.rpcontent
+{
+    color: #232b2b;
+    font-size: 14px;
+    font-weight: bold; 
+    margin: 0; 
+}
+.rplogo
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rpmenucontent h5
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #232b2b;
+}
+.rpmenucontent h6
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+}
+.rpmenumain
+{
+    padding: 15px;
+}
+.rptitle
+{
+    align-items: center;
+    justify-content: center;
+}
+.rpsection
+{
+    text-align: left;
+    margin-left: 20px;
+}
+.rplogo svg
+{
+    fill: black;
+}
+.rpmenucontent:hover
+{
+    color: silver;
+}
+.rpmenucontent:hover::after
+{
+    content: '';
+    color: silver;
+}
+.improveform, .problemform
+{
+    transition: all 0.4s ease;
+    width: 540px;
+    background: white;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+.form h3
+{
+    font-size: 20px;
+    font-weight: 630;
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+}
+.area
+{
+    padding: 10px;
+    margin-top: 10px;
+    width: 500px;
+    border-radius: 5px;
+    height: 50px;
+}
+.detailinput p
+{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.detail
+{
+    padding: 10px;
+    margin-top: 2px;
+    width: 500px;
+    border-radius: 5px;
+    height: 90px;
+    border: 2px solid black;
+    background: silver;
+}
+.infor
+{
+    border-radius: 5px;
+    background: silver;
+    margin-top: 15px;
+}
+.backrp1
+{
+    left: 30px;
+    top: 20px; 
+}
+.cancelbtn
+{
+    font-size: 17px;
+    text-decoration: none;
+    color: #1877F2;
+}
+.submitbtn
+{
+    font-size: 17px;
+    padding: 10px 40px 10px;
+    background-color: #1877F2;
+    color:white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 20px;
+    border: #1877F2;
+}
+.buttons
+{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.problemform, .improveform
+{
+    display: none;
+}
+.background
+{
+    display: none;
+    position: fixed;
+    z-index: 1100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); 
+    transition: opacity 0.3s ease;
+}
+.rpmenumain a
+{
+    transition: all 0.4 ease;
+}
+.backrp1
+{
+    transition: all 0.4s ease;
+}

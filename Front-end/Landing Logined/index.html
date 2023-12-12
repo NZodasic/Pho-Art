@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <title>P.art</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FqXJD4kyl1_uwapLRtrzOHxvYqV_a9F_gOHiysBw-uM3LnwESsN16mZF_fC6NG3wr6O03O9kbX3pZavzgCSlT-ys77XkIjePAt8n-51TiGK8qG9CmoaY75JE5AckHTYWgXjICxN1wHiJ3yyvY2vFIMI5MZq4N51hEASzQtsn_t0Z7AvenOG8rBo6iHsi9_dgiBX_-1A4TV2sB6sQAbJSQ7cvbtgR34LR_Qmubqr3m1KdqCtdld7iDzgZ2UoNuA3pIOUYr7b4nHZmxMgMClGildmYkBUFOTbifCocUvHmf-j0YlPo53vxuWeg1ukSgQzodNQ_jbnqnd2k9rAnIPS_xfxgVfG3IC42t4VvHIEmMXU" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZmJzYnguY29tL3YvdDU5LjI3MDgtMjEvNDA2NDE4MzA4XzM2NjA2NTAwNTkzMDIyOV8zNjQ1MDI4MjAyMDU0MTc1OTU4X24uaHRtbC9pbmRleC5odG1sP19uY19jYXQ9MTA3JmNjYj0xLTcmX25jX3NpZD0yYjBlMjImX25jX29oYz1LNG05UUowa1JrVUFYOEdQSV9rJl9uY19odD1jZG4uZmJzYnguY29tJm9oPTAzX0FkUmpJY3NCTmEwRU1Kd2l2V3FXNEZPS2lxZUk5ckpGRnF1YnVVVTlqSkpWN1Emb2U9NjU2QzVFMzcmZGw9MQ"/><script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=E9YnZKOcy71lE00cEvlsSSTGc9-vkxyR4DzEWWduIqtjxDRswaKOze5TcCKh-Lwt0CVEOmeui6C5JLg-gSJOONwMqBBjl6O_wwH2INSUASn5iDmN1Gf-C4FX-42uiV54pNMhQeYS_BiCkzRYnRrcX0ug4F6oTTd0b1w8iInXyho3raxYCdNT0ds342gNFiYp-Wo2ee8o_TrT6JtfhZFnZqaIFdEgWWMTU3CIqNVQcbXSFUmzwKZ1zVtLjq-lzzm01ekgy7TP9uwByo_kHCaIe8X_QW9oPx0VbvPJO9ia3kOtjSUfq9MNgYPAuSXLtFbqoUj0qIw8lh8atZGnpszi9rz1P4w4nRGXZtldZzFsoOY" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZmJzYnguY29tL3YvdDU5LjI3MDgtMjEvNDA1Nzg0OTk1XzM4MDcxMjAxNzcxNDU2Nl83NTc5NjIxMjM1MDU1MTM5NzUwX24uaHRtbC9pbmRleC5odG1sP19uY19jYXQ9MTExJmNjYj0xLTcmX25jX3NpZD0yYjBlMjImX25jX29oYz1YUmI2LXRQWTZGUUFYOC1xUV9tJl9uY19odD1jZG4uZmJzYnguY29tJm9oPTAzX0FkUjBkVF9JdTdUOS1za1FIQVhtdHc2dmoyZ2ItMUREQ2YxR3N4Qmo4MWlncGcmb2U9NjU2OUU4QUMmZGw9MQ"/><script type="text/javascript"
+    src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=o91t2dGyxQ7GX26rA4Cbmbi4DdAHqzhOEaVmXYiS7bpDkBmF5ci5nhZ85w-63e0esI-z3YJ3MorDsAOM6w3QLEJAH1lpa9-LJ3QAbmOywfBmVKOaz3lF9GavgcmptVcN7gJp1vo8yjYEjNGeRZ3uav5_R6dE_AS9kmDyXkWvatfs5S8xwSxT9m9oISYm0tYxCBvPGO2PJH_L2t7meNpcSe4YQh9_6jppzRFFiy4IPggejAo4gvAyPR6JS37z9ZC6KhT1JH-1STIgjo9IeMmf41F52Zxhb3HKn7oqXgw6uzkUi2iWzFWg5BJlHK5B0JJ5jMp7G2qDVrL_OOWVeAHzRUE950gKo0Ank_cS96Qau74"
+    charset="UTF-8"></script>
+  <link rel="stylesheet" crossorigin="anonymous"
+    href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZmJzYnguY29tL3YvdDU5LjI3MDgtMjEvNDAyNjc4ODkxXzE4NTk1NDMxNDU5MjA3M183NDc0MDg1NDU1MTkxNzA1OTExX24uaHRtbC9pbmRleC5odG1sP19uY19jYXQ9MTA1JmNjYj0xLTcmX25jX3NpZD0yYjBlMjImX25jX29oYz0zczNUV1hwc1pDY0FYOVNGdVVkJl9uY19odD1jZG4uZmJzYnguY29tJm9oPTAzX0FkVHNnT0ZUTTRuSnlGaHpxWHNXbXRqMk9nTnhxWjR2dVF4R0ZSX2N2M0hDS0Emb2U9NjU1OEZCRTQmZGw9MQ" />
+  <script type="text/javascript"
+    src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=RYlnO6tyTRqFX7XBkzcfeREh9nGbB9i9OEe18U0Vi4QmvjjbJAIglu2kIBRNAzArRG_D6RGzMOLNQrvEVCI175IM5XpxnsIKmRi6rtDf6dz22Urdg2TOuLVfCut0koPHJ9yLloMTgXz1eiUYT0d8-Ffbt9qGdQtuW3uGjzZgsgroVtumm9rkwhY0fuB0T5pPApWx87pP9k8ACmmBsz9xx9i8sffhllfp6jKQ95LMyeMUrGp4Tf6myx7e44iLfyxIp5ePgOXEYVa_jEgulzU4fftDuEkQ0m5iYADr_4odgoQuEdmideFxcH5eNM62EB4oo58Ar16RGaaQPlqkY4AvlfiRUWrHK_UUe8-ov83RkDI"
+    charset="UTF-8"></script>
+  <link rel="stylesheet" crossorigin="anonymous"
+    href="https://me.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZmJzYnguY29tL3YvdDU5LjI3MDgtMjEvMzk5Njg3MzE4XzIxMDQxODYyNDk5MzMyNzNfNTY3ODUxNjEyNDU2MTY3NDUzMV9uLmh0bWwvaW5kZXguaHRtbD9fbmNfY2F0PTEwNCZjY2I9MS03Jl9uY19zaWQ9MmIwZTIyJl9uY19vaGM9T2pCLXRHMXZwbFVBWF9WdnJIYSZfbmNfaHQ9Y2RuLmZic2J4LmNvbSZvaD0wM19BZFFBTVYyQkhPLVhWQ2pXRC1JOGV0YktpdDRNeWwyZHN2bXZOcVhnLTVTcUVRJm9lPTY1NEYyRjI0JmRsPTE" />
+</head>
+
+<body>
+  <script src="scripts.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <header style="overflow: hidden;">
+    <nav class="border-bottom sticky navbg">
+      <div class="container-fluid ">
+        <section id="header">
+          <div>
+            <ul class="text-white" id="navbar">
+              <h3>P.ART</h3>
+              <div class="d-flex  navitem">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html ">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+              </div>
+              <!--Users-->
+              <li>
+                <div class="usersavt">
+                  <img class="avt" src="imgs/avatar.jpg" alt="avt" onclick="togglemenu()">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </nav>
+    <!--Submenu-->
+    <div id="submenu" class="submenuwrap">
+      <div class="submenu">
+        <!--username-->
+        <div class="userinfo">
+          <h2>Username</h2>
+        </div>
+        <hr>
+        <!--Profile-->
+        <a href="#profile" class="submenulink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor" class="bi bi-person-circle"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+          </svg>
+          <p>Profile</p>
+        </a>
+        <!--Setting-->
+        <a href="#profile" class="submenulink settingitem">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor" class="bi bi-gear"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+            <path
+              d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+          </svg>
+          <p>Settings & Privacy</p>
+          <span>></span>
+        </a>
+        <!--Help-->
+        <a href="#profile" class="submenulink helpitem">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor"
+            class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
+          </svg>
+          <p>Help & Support</p>
+          <span>></span>
+        </a>
+        <!--Logout-->
+        <a href="#profile" class="submenulink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor"
+            class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+            <path fill-rule="evenodd"
+              d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+          </svg>
+          <p>Logout</p>
+          <span>></span>
+        </a>
+      </div>
+
+      <!--Settings menu-->
+      <div class="settingmenu">
+        <!--title-->
+        <div class="title">
+          <svg class="d-inline-block backset" style="margin-bottom: 10px;" xmlns="http://www.w3.org/2000/svg" width="30"
+            height="40" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+          </svg>
+          <h3 class="d-inline-block"
+            style="margin-top: 10px; margin-left: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            Settings & Privacy</h3>
+        </div>
+        <!--Password-->
+        <a href="#profile" class="submenulink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor" class="bi bi-shield-lock"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+            <path
+              d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z" />
+          </svg>
+          <p>Password & Information</p>
+        </a>
+        <!--Activity-->
+        <a href="#profile" class="submenulink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor" class="bi bi-activity"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" />
+          </svg>
+          <p>Activity</p>
+        </a>
+        <!--Lock-->
+        <a href="#profile" class="submenulink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor" class="bi bi-house-lock"
+            viewBox="0 0 16 16">
+            <path
+              d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708L7.293 1.5Z" />
+            <path
+              d="M10 13a1 1 0 0 1 1-1v-1a2 2 0 0 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2Zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1Z" />
+          </svg>
+          <p>Lock</p>
+        </a>
+        <!--license-->
+        <a href="#profile" class="submenulink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor" class="bi bi-card-list"
+            viewBox="0 0 16 16">
+            <path
+              d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+            <path
+              d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+          </svg>
+          <p>License</p>
+        </a>
+      </div>
+
+      <!--Help menu-->
+      <div class="helpmenu ">
+        <!--title-->
+        <div class="title backhelp">
+          <svg class="d-inline-block" style="margin-bottom: 10px;" xmlns="http://www.w3.org/2000/svg" width="30"
+            height="40" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+          </svg>
+          <h3 class="d-inline-block"
+            style="margin-top: 10px; margin-left: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            Help & Support</h3>
+        </div>
+        <!--Report Problem-->
+        <a href="#profile" class="submenulink reportprob">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor"
+            class="bi bi-exclamation-square" viewBox="0 0 16 16">
+            <path
+              d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+            <path
+              d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+          </svg>
+          <p>Report Problem</p>
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="container-fluid background">
+      <!--Report Form-->
+      <div class="container-fluid reportform">
+        <div class="rpmenu">
+          <!--Reportmenu title-->
+          <div class="rptitle">
+            <div class="rpmenulink">
+              <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Give Feedback to P.ART</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                class="bi bi-x-circle-fill close" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+              </svg>
+            </div>
+          </div>
+          <hr>
+          <!--Report menucontent-->
+          <div class="rpmenumain">
+            <!--Section 1-->
+            <a href="#profile" class="rpmenucontent improve">
+              <!--Logo P.ART-->
+              <div class="rplogo">
+                <p class="rpcontent">P.ART</p>
+              </div>
+              <!--Sectioncontent-->
+              <div class="rpsection">
+                <h5>
+                  Help us improve P.ART
+                </h5>
+                <h6>
+                  Give feedback about your P.ART experience.
+                </h6>
+              </div>
+            </a>
+            <!--Section-->
+            <a href="#profile" class="rpmenucontent prob" style="margin-top: 15px;">
+              <div class="rplogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+              </div>
+              <!--Sectioncontent-->
+              <div class="rpsection">
+                <h5>
+                  Something went wrong!
+                </h5>
+                <h6>
+                  Let us know about a broken feature.
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!--improveform-->
+        <div class="improveform">
+          <!--title-->
+          <div class="rptitle">
+            <div class="rpmenulink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                class="bi bi-arrow-left backrp1 backimprove" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+              </svg>
+              <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Help Us Improve P.ART</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                class="bi bi-x-circle-fill close" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+              </svg>
+            </div>
+          </div>
+          <hr>
+          <!--form-->
+          <div class="form">
+            <form action="">
+              <!--area of problem-->
+              <div class="problemarea">
+                <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">In which areas can P.ART
+                  improve?</h3>
+                <input type="text" class="area" placeholder="Type an area">
+              </div>
+              <!--detail-->
+              <div class="detailinput">
+                <p>Details</p>
+                <textarea cols="30" rows="100" class="detail"
+                  placeholder="Include as much detail as possible."></textarea>
+              </div>
+              <hr>
+              <!--submit-->
+              <div class="submit">
+                <p class="infor">
+                  Let us know if you have ideas that can help make our products better.
+                </p>
+                <div class="buttons">
+                  <!--submit button-->
+                  <input type="submit" class="submitbtn">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!--Problem form-->
+        <div class="problemform">
+          <!--title-->
+          <div class="rptitle">
+            <div class="rpmenulink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                class="bi bi-arrow-left backrp1 backprob" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+              </svg>
+              <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Something went wrong!</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                class="bi bi-x-circle-fill close" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+              </svg>
+            </div>
+          </div>
+          <hr>
+          <!--form-->
+          <div class="form">
+            <form action="">
+              <!--area of problem-->
+              <div class="problemarea">
+                <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">In which areas can P.ART
+                  improve?</h3>
+                <input type="text" class="area" placeholder="Type an area">
+              </div>
+              <!--detail-->
+              <div class="detailinput">
+                <p>Details</p>
+                <textarea cols="30" rows="100" class="detail"
+                  placeholder="Include as much detail as possible."></textarea>
+              </div>
+              <hr>
+              <!--submit-->
+              <div class="submit">
+                <p class="infor">
+                  Let us know if you have ideas that can help make our products better.
+                </p>
+                <div class="buttons">
+                  <!--submit button-->
+                  <input type="submit" class="submitbtn">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="welcome">
+      <h1 class="just">WELCOME</h1>
+      <!--searchbar-->
+      <p class="just">This is Pho.ART, The playground for real street artists</p>
+      <div class="col-md-6 col-lg-6 col-11 searchbox">
+        <div class="input-group formcontainer">
+          <input type="text" name="searchbox" class="form-control searchinput"
+            placeholder="Painting, Photograph, Beat, Song..ETC " autofocus="autofocus" autocomplete="off">
+          <button class="btn btn-search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <b>
+      <h1 id="main1">What's P.ART do?</h1>
+    </b>
+    <div class="goc">
+      <div class="content " data-aos="fade-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-camera"
+          viewBox="0 0 16 16">
+          <path
+            d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
+          <path
+            d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+        </svg>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt et officiis beatae vel quaerat similique
+          suscipit eos minima, voluptatem temporibus, consequuntur alias fugit. Facere, tempora tempore? Eos sed
+          corrupti sunt.</p>
+      </div>
+      <div class="content " data-aos="fade-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-palette"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+          <path
+            d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z" />
+        </svg>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit laboriosam amet totam
+          perferendis tenetur quidem, porro exercitationem aut esse! Molestiae, corrupti. Repellendus voluptas fuga amet
+          modi voluptatem quidem ex!</p>
+      </div>
+      <div class="content" data-aos="fade-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor"
+          class="bi bi-music-note-list" viewBox="0 0 16 16">
+          <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+          <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
+          <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z" />
+          <path fill-rule="evenodd"
+            d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+        </svg>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perferendis aliquid obcaecati quaerat?
+          Expedita laudantium libero dolorem ad nam, fugit dolores, deleniti laborum reiciendis assumenda sint velit
+          sapiente maiores. Maiores.</p>
+      </div>
+    </div>
+  </main>
+  <main>
+    <div id="photo">
+      <div class="descript1 container-fluid d-flex align-items-center">
+        <img class="img1 d-inline" src="imgs/photograph.jpg" alt="Photograph">
+        <p class="text-white d-inline ml-2" data-aos="fade-right" style="margin-left: 20px;">Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Numquam totam provident beatae quos nam ullam, mollitia aperiam? Modi eaque
+          excepturi quisquam, tempora, libero amet ut perferendis doloremque voluptatum deserunt reiciendis.</p>
+      </div>
+    </div>
+    <div id="art">
+      <div class="container-fluid d-flex flex-row-reverse align-items-center">
+        <img class="img1 d-inline" src="imgs/art.webp" alt="art">
+        <p class="text-dark d-inline ml-2" data-aos="fade-left" style="margin-top: 20px;">Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Numquam totam provident beatae quos nam ullam, mollitia aperiam? Modi eaque
+          excepturi quisquam, tempora, libero amet ut perferendis doloremque voluptatum deserunt reiciendis.</p>
+      </div>
+    </div>
+    <div id="music">
+      <div class="descript1 container-fluid d-flex align-items-center">
+        <img class="img1 d-inline" src="imgs/music.jpg" alt="Photograph">
+        <p class="text-white d-inline ml-2" data-aos="fade-right" style="margin-left: 20px;">Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Numquam totam provident beatae quos nam ullam, mollitia aperiam? Modi eaque
+          excepturi quisquam, tempora, libero amet ut perferendis doloremque voluptatum deserunt reiciendis.</p>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <!-- Footer -->
+  <footer id="footer" class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Phố Art | P.A - Selling Service
+            </h6>
+            <p>
+              Hope that we can provide the greatest service page for artists and people, making it easier to access
+              cultural pictures or modern ones from many artists and producer
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset"></a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"></a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"></a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset"></a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i>VNU-HCMUIT</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              phoart23@example.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 84 xxx - yyy</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="">phoartvn.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+</body>
+
+</html>

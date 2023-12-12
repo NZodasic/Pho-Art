@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico">-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Phố Art</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <!--Sign Up-->
+        <div class="form-container sign-up">
+            <form action="process-signup.php" method="post">
+                <h1>Create Account</h1>
+
+                <div class="row justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4" style="width:300px;">
+                            <div class="card bg-white mb-5 mt-5 border-0"
+                                style="box-shadow: 0 12px 15px rgba(0, 0, 0, 0.02);">
+                                <div class="card-body p-5">
+                                    <input type="text" placeholder="Name" required>
+                                    <input type="email" placeholder="Email" required>
+                                    <input type="password" class="form-control" id="password-input" autocomplete="off"
+                                        placeholder="Password" aria-autocomplete="list" aria-label="Password"
+                                       >
+
+                                    <div class="password-meter">
+                                        <div class="meter-section rounded me-2"></div>
+                                        <div class="meter-section rounded me-2"></div>
+                                        <div class="meter-section rounded me-2"></div>
+                                        <div class="meter-section rounded"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                        <button>Create an account</button>
+            </form>
+        </div>
+
+
+
+        <!--Sign In -->
+        <div class="form-container sign-in">
+            <form>
+                <h1>Login</h1>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required minlength="8">
+                <a href="forgetpassword.html">Forget Password ?</a>
+                <button>Login</button>
+            </form>
+        </div>
+
+        <!--Toggle Container-->
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Already have one?</h1>
+                    <br>
+                    <span>Login now</span>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Don't have any account?</h1>
+                    <br>
+                    <span>Create one now</span>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="javascript/script.js"></script>
+
+</html>
