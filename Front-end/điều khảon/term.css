@@ -1,0 +1,23 @@
+.layout{
+    margin:50px 40px 20px 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+.layout h1{
+    font-size: 50px;
+    text-align: center;
+}
+.layout h2{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+}
+.layout p {
+    margin: 10px 0px 10px 0px;
+    font-size: 15px;
+    text-align: justify;
+}
+.layout li {
+    font-size: 15px;
+}
+.layout ul {
+    margin: 10px 0px 10px 0px;
+}
