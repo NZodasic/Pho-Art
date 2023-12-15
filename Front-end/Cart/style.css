@@ -1,0 +1,141 @@
+.cart
+{
+    margin: 80px auto;
+}
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+th
+{
+    text-align: left;
+    padding: 5.5px;
+    color: #fff;
+    font-size: 18.5px;
+    background: #ff523b;
+    font-weight: 500;
+}
+.p-img-ctn
+{
+    width:  123px;
+    height: 123px;
+    display: flex;
+    overflow: hidden;
+    margin-right: 10px; 
+}
+.p-img a, .p-img
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.p-img a img
+{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    animation: fade 0.6s;
+}
+.p-img-back
+{
+    display: none;
+}
+.p-img-ctn:hover .p-img-back
+{
+    display: block;
+}
+.p-img-ctn:hover .p-img-front
+{
+    display: none;
+}
+@keyframes fade
+{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+td
+{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color:#ff523b;
+    font-size: 12px;
+    text-decoration: none;
+}
+.p-category
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}   
+.p-category span
+{
+    color: #acacac;
+    font-size: 1rem;
+}
+.total-price
+{
+    justify-content: flex-end;
+    display: flex;
+}
+.total-price table
+{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 350px;
+}
+td:last-child
+{
+    text-align: right;
+}
+th:last-child
+{
+    text-align: right;
+}
+@media only screen and (max-width: 600px) { 
+    .cart-info p
+    {
+        display: none;
+    }
+}
+.checkout, .continue
+{
+    border: none;
+    background: #ff523b;
+    color: #fff;    
+    width: 350px; 
+    height: 40px; 
+    padding: 7px auto;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.continue
+{
+    border: solid black;
+    background: transparent;
+    color:black;
+    font-weight: 700;    
+    width: 350px; 
+    height: 40px; 
+    padding: 10px auto;
+    text-transform: uppercase;
+    margin: 15px auto;
+}

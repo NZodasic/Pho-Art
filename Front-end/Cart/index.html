@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--p-cart-->
+    <div class="container cart">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <!--PRoduct1-->
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <div class="p-img-ctn">
+                            <!--image-->
+                            <div class="p-img">
+                              <a href="#">
+                                <!--Front img-->
+                                <img src="img/p1.jpg" class="p-img-front" alt="Front">
+                                <!--Backt img-->
+                                <img src="img/p1.2.jpg" class="p-img-back" alt="">
+                              </a>
+                            </div>
+                          </div>
+                        <div>
+                            <!--Product Name-->
+                            <p>Vincent van Gogh (Dutch, 1853 - 1890) Irises, 1889</p>
+                            <div class="p-category">
+                                <span>Painting</span>
+                            </div>
+                            <!--Price-->
+                            <small>Price: $1.000.000.00</small>
+                            <br>
+                            <!--Remove-->
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$1.000.000.00</td>
+            </tr>
+            <!--Product2-->
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <div class="p-img-ctn">
+                            <!--image-->
+                            <div class="p-img">
+                              <a href="#">
+                                <!--Front img-->
+                                <img src="img/abstract.jpg" class="p-img-front" alt="Front">
+                                <!--Backt img-->
+                                <img src="img/abstract.jpg" class="p-img-back" alt="">
+                              </a>
+                            </div>
+                          </div>
+                        <div>
+                            <!--Product Name-->
+                            <p>Photograph</p>
+                            <div class="p-category">
+                                <span>Music</span>
+                            </div>
+                            <!--Price-->
+                            <small>Price: $1.000.00</small>
+                            <br>
+                            <!--Remove-->
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$1.000.00</td>
+            </tr>
+            <!--Product3-->
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <div class="p-img-ctn">
+                            <!--image-->
+                            <div class="p-img">
+                              <a href="#">
+                                <!--Front img-->
+                                <img src="img/music.webp" class="p-img-front" alt="Front">
+                                <!--Backt img-->
+                                <img src="img/music.webp" class="p-img-back" alt="">
+                              </a>
+                            </div>
+                          </div>
+                        <div>
+                            <!--Product Name-->
+                            <p>Frank Ocean X Piano Ballad Type Beat - "flashlight"</p>
+                            <div class="p-category">
+                                <span>Music</span>
+                            </div>
+                            <!--Price-->
+                            <small>Price: $100.00</small>
+                            <br>
+                            <!--Remove-->
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$100.00</td>
+            </tr>
+        </table>
+
+        <!--total price-->
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Item(s) Subtotal</td>
+                    <td>$1.001.100.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>Order total</td>
+                    <td>$1.001.135.00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="d-grid float-end">
+            <button class="checkout">Checkout</button>
+            <button class="continue">Continue shopping</button>
+        </div>
+    </div>
+</body>
+</html>
