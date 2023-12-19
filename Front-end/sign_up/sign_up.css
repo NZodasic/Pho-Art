@@ -117,4 +117,12 @@ body {
   box-shadow: 4px 4px 10px #d1d9e6, -4px -4px 10px #f9f9f9 ;
   border-radius: 8px;
 }
+.terms-condition{
+  margin-top:10px;
+}
+.have{
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
 
