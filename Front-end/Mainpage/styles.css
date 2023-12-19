@@ -154,6 +154,12 @@ img {
 }
 @media(max-width: 500px)
 {
+    .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption h1{
+        margin-bottom: 150px;
+    }
     .carousel-item img
     {
         height: 640px;
