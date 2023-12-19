@@ -52,4 +52,26 @@
     flex-basis: 24%;
     flex-shrink: 1;
     flex-grow: 1;
+    vertical-align: middle;
+    max-height: 114.75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.mainimg
+{
+    max-height: 459px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainimg img{
+    max-height: 459px;
+    width: auto;
+}
+.small-img-col img
+{
+    max-height: 114.75px;
+    width: auto;
 }
