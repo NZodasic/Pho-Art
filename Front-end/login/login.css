@@ -27,7 +27,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
 }
-.container {
+.container_login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +99,7 @@ body {
   transition: 0.25s;
   cursor: pointer;
 }
-.des__container {
+.des__container_login {
   display: flex;
   justify-content: center;
   align-items: center;
