@@ -1,38 +1,44 @@
 header {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     height: 102vh;
     background-size: cover;
-    background-image: url('imgs/bg.jpg')
+    background-image: url('imgs/bg.jpg');
+}
+.logo
+{
+    font-size: 30px;
+    margin-left: 110px;
 }
 
-@media(max-width: 991px) {
-    .sidebar {
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-        overflow: hidden;
-    }
+.nav-item
+{
+    margin-left: 70px;
 }
-@media(max-width: 768px) {
+.navbar-nav
+{
+    margin-left: 220px;
+    padding-left: 20px;
+}
+@media (max-width: 768px) {
     .offcanvas-body {
-            background-color: #232b2b;
+        background-color: #232b2b;
     }
-
+    .navitem, .usersavt
+    {
+        display: none;
+    }
     #signup {
-        margin-left: 130px;
+        margin-left: 10px; /* Adjust as needed */
     }
 
     .goc {
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
+        margin-left: 10px; /* Adjust as needed */
     }
 
     .content {
-        margin-top: 50px;
-        display: inline-block;
-        align-items: center;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
     }
 
     #photo,
@@ -47,11 +53,40 @@ header {
     }
 
     .img1 {
+        width: 100%;
         max-width: 100%;
         height: auto;
         margin-bottom: 10px;
     }
+
+    #navbar h3 {
+        margin-right: 10px; /* Adjust as needed */
+    }
+    .bt
+    {
+        align-self: center;
+        width: 150px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .navbar-nav {
+        text-align: center;
+        margin-left: 0; 
+    }
+    .nav-item
+    {
+        margin-left: 0;
+    }
+    .navbar-nav .nav-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .logo
+    {
+        margin-left: 0;
+    }
 }
+
 .usersavt
 {   
     margin-right: 60px;
@@ -145,7 +180,30 @@ main {
     display: flex;
     flex-direction: column;
 }
+.bt
+{
+    margin-right: 50px;
+    color: darkcyan;
+    background: transparent;
+    border-radius: 10px;
+    border: solid darkcyan;
+    padding: 10px;
+}
+.navbar {
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+} 
+.nav-item a{
+    font-size: 23px;
+}  
 .context {
     flex: 1;
 }
@@ -199,6 +257,10 @@ main {
     background: white;
     padding: 12px; 
     border-radius: 15px;
+}
+.navbar
+{
+    border-bottom: solid gray;
 }
 .submenuwrap.openmenu
 {
@@ -279,59 +341,6 @@ main {
 .navbg
 {
     background: url('imgs/bg.jpg');
-}
-.sticky
-{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-#navbar {
-    width: 1600px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-  
-  #navbar li {
-    list-style: none;
-    padding: 0 20px;
-    position: relative;        
-}
-  
-  #navbar .navitem li a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 520;
-    transition: 0.3s ease;
-    margin-left: 20px;
-    color: white;
-}   
-  
-  #navbar li a:hover,
-  #navbar li a.active {
-    color: white;
-}
-  
-#navbar li a.active::after,
-#navbar li a:hover::after {
-    content: "";
-    width: 75%;
-    height: 2px;
-    background: cyan;
-    bottom: 10px;
-    margin-left: 21px;
-    display: block; 
-}
-#navbar h3
-{
-    margin-right: 200px;
-}
-.navitem
-{
-    margin-right: 300px;  
 }
 .reportform
 {

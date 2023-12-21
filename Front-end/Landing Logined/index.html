@@ -27,28 +27,32 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <header style="overflow: hidden;">
-    <nav class="border-bottom sticky navbg">
-      <div class="container-fluid ">
-        <section id="header">
-          <div>
-            <ul class="text-white" id="navbar">
-              <h3>P.ART</h3>
-              <div class="d-flex  navitem">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html ">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#footer">Contact</a></li>
-              </div>
-              <!--Users-->
-              <li>
-                <div class="usersavt">
-                  <img class="avt" src="imgs/avatar.jpg" alt="avt" onclick="togglemenu()">
-                </div>
-              </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg bg-transparent ">
+      <div class="container-fluid">
+        <a class=" logo fs-3" href="#" >P.ART</a>
+        <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a  aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a  aria-current="page" href="#">Music</a>
+            </li>
+            <li class="nav-item">
+              <a  aria-current="page" href="#">Order</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="bt btn-outline-success" type="submit">Search</button>
+          </form>
+          <div class="usersavt">
+            <img class="avt" src="imgs/avatar.jpg" alt="avt" onclick="togglemenu()">
           </div>
-        </section>
+        </div>
       </div>
     </nav>
     <!--Submenu-->
