@@ -145,8 +145,26 @@ img {
     color: #333333;
     font-weight: 700;
 }
+@media(max-width: 1800px){
+    .carousel-item img
+    {
+        height: 640px;
+        width: auto;
+    }
+}
 @media(max-width: 500px)
 {
+    .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption h1{
+        margin-bottom: 150px;
+    }
+    .carousel-item img
+    {
+        height: 640px;
+        width: auto;
+    }
     .p-box{
         margin: 0px 10px;
     }
@@ -207,8 +225,4 @@ img {
     z-index: 2;
     vertical-align: middle;
     text-align: center;
-}
-.music-img-front:hover
-{
-    
 }
