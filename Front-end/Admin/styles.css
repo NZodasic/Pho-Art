@@ -5,12 +5,16 @@
 body {
   overflow-x: hidden;
 }
-
+main
+{
+  display: flex;
+}
 .menu {
   list-style: none;
   padding: 0;
-  width: 250px;
+  width: 29%; 
   text-align: center;
+  position: relative;
 }
 
 .head {
@@ -33,7 +37,10 @@ body {
   font-size: large;
   transition: background-color 0.3s ease;
 }
-
+.grinf
+{
+  padding-right:  40px ;
+}
 .menu a:hover {
   background-color: #e9ecef;
 }
@@ -43,7 +50,6 @@ body {
   height: 270px;
   background-color: yellowgreen;
   text-align: center;
-  margin: 15px 0px 15px 50px;
 }
 
 .users p,
@@ -59,7 +65,6 @@ body {
   height: 270px;
   background-color: chocolate;
   text-align: center;
-  margin: 15px 0px 15px 50px;
 }
 
 .product {
@@ -67,9 +72,11 @@ body {
   height: 270px;
   background-color: cadetblue;
   text-align: center;
-  margin: 15px 0px 15px 50px;
 }
-
+.information
+{
+  justify-content: space-between;
+}
 .information svg {
   margin: 8px;
 }
@@ -79,21 +86,27 @@ body {
   height: 270px;
   background-color: darkred;
   text-align: center;
-  margin: 15px 0px 15px 50px;
 }
 
 .lipro {
   width: calc(220px * 4 + 100px);
   height: 283px;
-  margin: -5px 40px 0px;
 }
 
 table {
   border-collapse: collapse;
-  margin: 20px auto;
+  width: 980px;
+  height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.tablelist
+{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  justify-items: center;
+}
 .header,
 .button {
   text-align: center;
@@ -104,7 +117,10 @@ table {
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
-
+img
+{
+  max-width: 150px;
+}
 thead .header {
   font-size: x-large;
   text-align: start;
@@ -142,4 +158,53 @@ td {
 
 button {
   border: none;
+}
+.dropdown-toggle {
+  display: block;
+  width: 430px; 
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+  background-color: cornflowerblue;
+}
+@media(max-width: 1800px){
+
+}
+@media(max-width: 500px)
+{
+  main
+  {
+    display: block;
+  }
+}
+@media(max-width: 320px)
+{
+
+}
+td
+{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color:#ff523b;
+    font-size: 12px;
+    text-decoration: none;
+}
+.p-category
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}   
+.p-category span
+{
+    color: #acacac;
+    font-size: 1rem;
 }

@@ -115,6 +115,16 @@ th:last-child
     {
         display: none;
     }
+    .total-price
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .grbtn
+    {
+        display: flex;
+        justify-content: center;
+    }
 }
 .checkout, .continue
 {
@@ -138,4 +148,8 @@ th:last-child
     padding: 10px auto;
     text-transform: uppercase;
     margin: 15px auto;
+}
+.grbtn
+{
+    float: inline-end;
 }
