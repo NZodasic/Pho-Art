@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }); 
+    window.addEventListener('resize', function() {
+        const ressub= document.querySelector("#ressub");
+        if (window.innerWidth < 768 && submenu.classList.contains('disable')) {
+            ressub.style.display = 'none';
+        } 
+    });
     
     window.dispatchEvent(new Event('resize'));
     
@@ -17,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const backhelp = document.querySelector('.backhelp');
     const submenu = document.querySelector('.submenu');
     const setting_drop = document.querySelector('.settingmenu');
-    const setting_item = document.querySelector('.settingitem') ;
+    const setting_item = document.querySelectorAll('.settingitem') ;
     const help_drop = document.querySelector('.helpmenu');
     const help_item = document.querySelector('.helpitem');
     const backset = document.querySelector('.backset')
@@ -97,4 +103,5 @@ document.addEventListener('DOMContentLoaded', function() {
 function togglemenu() {
     var submenu = document.getElementById("submenu");
     submenu.classList.toggle("openmenu");
+
 }  
