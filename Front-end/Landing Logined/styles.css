@@ -5,6 +5,8 @@ header {
 }
 .logo
 {
+    text-decoration: none;
+    color: #fff;
     font-size: 30px;
     margin-left: 110px;
 }
@@ -18,75 +20,22 @@ header {
     margin-left: 220px;
     padding-left: 20px;
 }
-@media (max-width: 768px) {
-    .offcanvas-body {
-        background-color: #232b2b;
-    }
-    .navitem, .usersavt
-    {
-        display: none;
-    }
-    #signup {
-        margin-left: 10px; /* Adjust as needed */
-    }
-
-    .goc {
-        margin-left: 10px; /* Adjust as needed */
-    }
-
-    .content {
-        margin-top: 20px;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-bottom: 20px;
-    }
-
-    #photo,
-    #art,
-    #music {
-        text-align: center;
-    }
-
-    .d-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img1 {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    #navbar h3 {
-        margin-right: 10px; /* Adjust as needed */
-    }
-    .bt
-    {
-        align-self: center;
-        width: 150px;
-        margin-top: 10px;
-        margin-left: 40px;
-    }
-    .navbar-nav {
-        text-align: center;
-        margin-left: 0; 
-    }
-    .nav-item
-    {
-        margin-left: 0;
-    }
-    .navbar-nav .nav-item {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .logo
-    {
-        margin-left: 0;
-    }
-}
-
+.navref {
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+  }
+  
+.navref:hover::after  {
+    content: "";
+    position:absolute;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+    height: 2px;
+    align-self: center;
+    background-color:lightskyblue;  
+  }
 .usersavt
 {   
     margin-right: 60px;
@@ -189,6 +138,11 @@ main {
     border: solid darkcyan;
     padding: 10px;
 }
+.bt:hover
+{
+    background-color: darkcyan;
+    color: white;
+}
 .navbar {
     color: #fff;
     padding: 15px;
@@ -196,7 +150,7 @@ main {
     justify-content: space-between;
 }
 
-.navbar a {
+.navbar .navref {
     color: #fff;
     text-decoration: none;
     padding: 10px;
@@ -550,4 +504,133 @@ main {
 .backrp1
 {
     transition: all 0.4s ease;
+}
+.of
+{
+    overflow: hidden;
+}
+.resuser
+{
+    display: none;
+}
+@media (max-width: 768px) {
+    .disable
+    {
+        max-height: 0;
+        overflow: hidden;
+    }
+    .wrapmenures
+    {
+        display: flex;
+        margin-top: 20px;
+        max-width: 100vw;
+    }
+    .submenu
+    {
+        transition:all 0.3s ease;
+        width: 100%;
+        background: white;
+        border-radius: 5px;
+    }
+    .settingmenu{
+        transition:all 0.3s ease;
+        width: 100%;
+        background: white;
+        padding: 12px; 
+        border-radius: 5px;
+    }
+    .helpmenu
+    {
+        transition:all 0.3s ease;
+        width: calc(100% + 320px);
+        background: white;
+        border-radius: 5px;
+    }
+    .submenulink a p
+    {
+        color:black
+    }
+    .submenulink p
+    {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0;
+        margin-right: 50px;
+    }
+    .resuser
+    {
+        display: block;
+    }
+    .usersavt
+    {
+        display: none;
+    }
+    .offcanvas-body {
+        background-color: #232b2b;
+    }
+    .navitem, .usersavt
+    {
+        display: none;
+    }
+    #signup {
+        margin-left: 10px; /* Adjust as needed */
+    }
+
+    .goc {
+        margin-left: 10px; /* Adjust as needed */
+    }
+
+    .content {
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    #photo,
+    #art,
+    #music {
+        text-align: center;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img1 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #navbar h3 {
+        margin-right: 10px; /* Adjust as needed */
+    }
+    .bt
+    {
+        align-self: center;
+        width: 150px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .navbar-nav {
+        text-align: center;
+        margin-left: 0; 
+        border-top: solid gray  ;
+    }   
+    .nav-item
+    {
+        margin-left: 0;
+    }
+    .navbar-nav .nav-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .logo
+    {
+        margin-left: 0;
+    }
+
 }
