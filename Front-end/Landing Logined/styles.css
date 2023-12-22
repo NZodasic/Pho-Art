@@ -36,9 +36,13 @@ header {
     align-self: center;
     background-color:lightskyblue;  
   }
+.chatbox
+{
+    margin-right: 40px;
+}
 .usersavt
 {   
-    margin-right: 60px;
+    margin-right: 42px;
     margin-top: 5px;
     width: 60px; 
     height: 60px;
@@ -115,6 +119,7 @@ main {
     padding-top: 60px;
     padding-left: 20px;
     padding-bottom: 60px;
+    display: inline;
     width: 600px;
     height: auto;
 }
@@ -199,17 +204,17 @@ main {
     overflow: hidden;
     transition: all 0.4s ease-in-out;
 }   
-.helpmenu
+.helpmenu,.helpmenu1
 {
     height: fit-content;
 }
-.settingmenu,.helpmenu
+.settingmenu,.helpmenu,.settingmenu1,.helpmenu1
 {
     transition: all 0.3s ease-in-out;
     display: none;
     width: 320px;
     background: white;
-    padding: 12px; 
+    padding: 12px;  
     border-radius: 15px;
 }
 .navbar
@@ -220,11 +225,11 @@ main {
 {
     max-height: 1400px;
 }
-.backset, .backhelp
+.backset, .backhelp,.backhelp1, .backset1
 {
     transition: all 0.3s ease-out;
 }
-.submenu
+.submenu, .submenu1
 {
     transition:all 0.3s ease;
     width: 320px;
@@ -513,7 +518,62 @@ main {
 {
     display: none;
 }
+.res
+{
+    display: none;
+}
+.chatboxres
+{
+    display: none;
+}
+#art div
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
 @media (max-width: 768px) {
+    .rpmenulink h3
+    {
+        display: block;
+        margin-left: 26px;
+    }
+}
+@media (max-width: 1368px) {
+    #art div
+    {
+        margin-bottom: 100px;
+        display: block;
+    }
+    #welcome
+    {
+        position: static;
+    }
+    .chatbox{
+        display: none;
+    }
+    .chatboxres{
+        display: block;
+        margin-left: 180px ;
+        margin-bottom: 6px;
+    }
+    .backrp1
+    {
+        position: absolute;      
+         left: 5px;
+    }
+    .rpmenulink h3
+    {
+
+        display: block;
+        text-align: center;
+    }
+    .area {
+        width: 100%;
+    }
+
+    .detail {
+        width: 100%;
+    }
     .disable
     {
         max-height: 0;
@@ -525,26 +585,29 @@ main {
         margin-top: 20px;
         max-width: 100vw;
     }
-    .submenu
+    
+    .submenu,.submenu1
     {
         transition:all 0.3s ease;
         width: 100%;
         background: white;
-        border-radius: 5px;
+        border-radius: 7px;
     }
-    .settingmenu{
+    .settingmenu1{
         transition:all 0.3s ease;
         width: 100%;
         background: white;
         padding: 12px; 
-        border-radius: 5px;
+        border-radius: 7px;
     }
-    .helpmenu
+    .helpmenu1
     {
+        justify-self: center    ;
         transition:all 0.3s ease;
-        width: calc(100% + 320px);
+        width: 100%;
         background: white;
-        border-radius: 5px;
+        padding: 10px auto  ;
+        border-radius: 7px;
     }
     .submenulink a p
     {
@@ -565,9 +628,7 @@ main {
     {
         display: none;
     }
-    .offcanvas-body {
-        background-color: #232b2b;
-    }
+
     .navitem, .usersavt
     {
         display: none;
@@ -577,7 +638,7 @@ main {
     }
 
     .goc {
-        margin-left: 10px; /* Adjust as needed */
+        justify-content: center;
     }
 
     .content {
@@ -602,7 +663,6 @@ main {
         width: 100%;
         max-width: 100%;
         height: auto;
-        margin-bottom: 10px;
     }
 
     #navbar h3 {
