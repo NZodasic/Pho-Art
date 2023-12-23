@@ -27,12 +27,21 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <header style="overflow: hidden;">
-    <nav class="navbar navbar-expand-lg bg-transparent ">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class=" logo fs-3" href="#" >P.ART</a>
-        <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-inline-flex ">
+          <div class="chatboxres">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="white" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+              </svg>
+            </a>
+          </div>
+          <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
         <div class=" navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"> 
@@ -46,7 +55,7 @@
                 <!--Submenu-->
               <div class="collapse text-dark wrapmenures container-fluid" id="collapseExample">
                 <!--Wrap Main-->
-                <div class="submenu">
+                <div class="submenu1">
                   <!--Profile-->
                   <a id="ressub" href="#profile" class="submenulink">
                     <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor" class="bi bi-person-circle"
@@ -58,7 +67,7 @@
                     <p>Profile</p>
                   </a>
                   <!--Setting-->
-                  <a href="#profile" class="submenulink settingitem">
+                  <a href="#profile" class="submenulink settingitem1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor" class="bi bi-gear"
                       viewBox="0 0 16 16">
                       <path
@@ -69,7 +78,7 @@
                     <p>Settings & Privacy</p>
                   </a>
                   <!--Help-->
-                  <a id="helpitem" href="#profile" class="submenulink helpitem">
+                  <a id="helpitem" href="#profile" class="submenulink helpitem1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor"
                       class="bi bi-question-circle-fill" viewBox="0 0 16 16">
                       <path
@@ -90,10 +99,10 @@
                   </a>
                 </div>
                 <!--Settings menu-->
-                <div class="settingmenu">
+                <div class="settingmenu1">
                   <!--title-->
                   <div class="title">
-                    <svg class="d-inline-block backset" style="margin-bottom: 10px; float: inline-start ;" xmlns="http://www.w3.org/2000/svg" width="30"
+                    <svg class="d-inline-block backset1" style="margin-bottom: 10px; float: inline-start ;" xmlns="http://www.w3.org/2000/svg" width="30"
                       height="40" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                       <path fill-rule="evenodd"
                         d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
@@ -146,20 +155,20 @@
                   </a>
                 </div>
                 <!--Help menu-->
-                <div class="helpmenu">
+                <div class="helpmenu1">
                   <!--title-->
-                  <div class="title backhelp">
-                    <svg class="d-inline-block" style="margin-bottom: 10px; float: inline-start;" xmlns="http://www.w3.org/2000/svg" width="30"
+                  <div class="title backhelp1">
+                    <svg class="d-inline-block position-sticky" style="margin-bottom: 10px; float: inline-start;" xmlns="http://www.w3.org/2000/svg" width="30"
                       height="40" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                       <path fill-rule="evenodd"
                         d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                     </svg>
-                    <h3 class="d-inline-block"
+                    <h3 class="d-inline-block position-sticky"
                       style="margin-top: 10px; margin-left: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                       Help & Support</h3>
                   </div>
                   <!--Report Problem-->
-                  <a href="#profile" class="submenulink reportprob">
+                  <a href="#profile" class="submenulink reportprob1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" fill="currentColor"
                       class="bi bi-exclamation-square" viewBox="0 0 16 16">
                       <path
@@ -183,6 +192,13 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="bt btn-outline-success" type="submit">Search</button>
           </form>
+          <div class="chatbox">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="white" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+              </svg>
+            </a>
+          </div>
           <div class="usersavt">
             <img class="avt" src="imgs/avatar.jpg" alt="avt" onclick="togglemenu()">
           </div>
@@ -336,7 +352,7 @@
             <div class="rpmenulink">
               <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Give Feedback to P.ART</h3>
               <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
-                class="bi bi-x-circle-fill close" viewBox="0 0 16 16">
+                class="bi bi-x-circle-fill close float-end" viewBox="0 0 16 16">
                 <path
                   d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
               </svg>
@@ -384,18 +400,18 @@
         </div>
 
         <!--improveform-->
-        <div class="improveform">
+        <div class="improveform container-fluid">
           <!--title-->
           <div class="rptitle">
             <div class="rpmenulink">
               <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
-                class="bi bi-arrow-left backrp1 backimprove" viewBox="0 0 16 16">
+                class="bi bi-arrow-left backrp1 backimprove float-start" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
               </svg>
               <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Help Us Improve P.ART</h3>
               <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
-                class="bi bi-x-circle-fill close" viewBox="0 0 16 16">
+                class="bi bi-x-circle-fill close float-end" viewBox="0 0 16 16">
                 <path
                   d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
               </svg>
@@ -548,15 +564,15 @@
   <main>
     <div id="photo">
       <div class="descript1 container-fluid d-flex align-items-center">
-        <img class="img1 d-inline" src="imgs/photograph.jpg" alt="Photograph">
+        <img class="img1 " src="imgs/photograph.jpg" alt="Photograph">
         <p class="text-white d-inline ml-2" data-aos="fade-right" style="margin-left: 20px;">Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Numquam totam provident beatae quos nam ullam, mollitia aperiam? Modi eaque
           excepturi quisquam, tempora, libero amet ut perferendis doloremque voluptatum deserunt reiciendis.</p>
       </div>
     </div>
     <div id="art">
-      <div class="container-fluid d-flex flex-row-reverse align-items-center">
-        <img class="img1 d-inline" src="imgs/art.webp" alt="art">
+      <div class="container-fluid align-items-center">
+        <img class="img1 " src="imgs/art.webp" alt="art">
         <p class="text-dark d-inline ml-2" data-aos="fade-left" style="margin-top: 20px;">Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Numquam totam provident beatae quos nam ullam, mollitia aperiam? Modi eaque
           excepturi quisquam, tempora, libero amet ut perferendis doloremque voluptatum deserunt reiciendis.</p>
@@ -564,7 +580,7 @@
     </div>
     <div id="music">
       <div class="descript1 container-fluid d-flex align-items-center">
-        <img class="img1 d-inline" src="imgs/music.jpg" alt="Photograph">
+        <img class="img1 " src="imgs/music.jpg" alt="Photograph">
         <p class="text-white d-inline ml-2" data-aos="fade-right" style="margin-left: 20px;">Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Numquam totam provident beatae quos nam ullam, mollitia aperiam? Modi eaque
           excepturi quisquam, tempora, libero amet ut perferendis doloremque voluptatum deserunt reiciendis.</p>
