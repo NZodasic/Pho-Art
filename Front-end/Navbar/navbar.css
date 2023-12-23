@@ -1,7 +1,6 @@
 header {
-    height: 102vh;
     background-size: cover;
-    background-image: url('imgs/bg.jpg');
+    background-image: url('bg.jpg');
 }
 .logo
 {
@@ -10,7 +9,6 @@ header {
     font-size: 30px;
     margin-left: 110px;
 }
-
 .nav-item
 {
     margin-left: 70px;
@@ -66,74 +64,6 @@ header {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
-section#welcome {
-    height: calc(100vh - 60px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-#welcome h1 {
-    font-size: 48px;
-}
-.just
-{   
-    margin-bottom: 30px ;
-}
-main {
-    font: black;
-}
-
-#main1 {
-    text-align: center;
-    margin-top: 60px;
-}
-
-.content {
-    margin-top: 50px;
-    margin-right: 100px;
-    margin-left: 120px;
-    margin-bottom: 30px;
-    display: inline-block;
-}
-
-.goc {
-    margin-left: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-.content p {
-    font-size: large;
-    width: 250px;
-}
-
-#main2 {
-    display: block;
-}
-
-.img1 {
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-bottom: 60px;
-    display: inline;
-    width: 600px;
-    height: auto;
-}
-
-.descript1 {
-    background-color: black;
-    justify-content: flex-start;
-}
-
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 .bt
 {
     margin-right: 50px;
@@ -163,32 +93,6 @@ main {
 .nav-item a{
     font-size: 23px;
 }  
-.searchbox
-{
-    margin-top: 20px;
-    border: none;
-}
-.btn.btn-search
-{   
-    border: none;
-    cursor: pointer;
-    color: white;
-    background-color: darkcyan;
-}
-.searchinput:focus
-{
-    border-radius: 240px;
-    outline: none;
-    box-shadow: none;
-}
-.btn-search:hover {
-    transform: scale(1.1);
-}
-
-.btn-search:active {
-    transform: scale(1); 
-}
-
 .submenuwrap
 {
     display: flex;
@@ -288,15 +192,6 @@ main {
 }
 .submenulink:hover p{
     font-weight: 600;
-}
-#header {
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-}
-.navbg
-{
-    background: url('imgs/bg.jpg');
 }
 .reportform
 {
@@ -495,7 +390,7 @@ main {
     position: fixed;
     z-index: 1100;
     width: 100vw;
-    height: 100vh;
+    height: 190vh;
     background: rgba(0, 0, 0, 0.5); 
     transition: opacity 0.3s ease;
 }
@@ -536,6 +431,10 @@ main {
     }
 }
 @media (max-width: 1000px) {
+    .submenu
+    {
+        display: none;
+    }
     #art div
     {
         margin-bottom: 100px;
