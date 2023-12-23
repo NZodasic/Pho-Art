@@ -12,6 +12,77 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--p-cart-->
     <div class="container cart">
+        <div class="overlay d-none" id="overlay"></div>
+        <div class="addressform container">
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <div class="header1">              
+                            <h3 class="title">BILLING ADDRESS</h3>         
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-x-circle-fill" viewBox="0 0 16 16" onclick="togglecheck()">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                            </svg>
+                        </div>
+                        <div class="inputbox">
+                            <span>Full Name :</span>
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="inputbox">
+                            <span>Email:</span>
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="inputbox">
+                            <span>Phone :</span>
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="select">
+                            <label for="city">City:</label>
+                            <select id="city" name="city">
+                              <option value="volvo">...</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <label for="dis">District :</label>
+                            <select id="dis" name="dis">
+                              <option value="volvo">...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="header">
+                            <h3 class="title">PAYMENT</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-x-circle-fill" viewBox="0 0 16 16" onclick="togglecheck()">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                              </svg>
+                        </div>
+                        <div class="method">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              <img src="img/Logo-VNPAY-QR-1.webp" alt="">
+                            </label>
+                        </div>
+                        <div class="method">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              <img src="img/Logo-MoMo-Square.webp" alt="">
+                            </label>
+                        </div>
+                        <div class="method">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              <img src="img/cash-on-delivery-logo-free-png.webp" alt="">
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="total">
+                            <h4>TOTAL : </h4>
+                            <p>$10000000</p>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="CHECKOUT" class="submit-btn">
+            </form>
+        </div>
         <table>
             <tr>
                 <th>Product</th>
@@ -29,7 +100,7 @@
                                 <!--Front img-->
                                 <img src="img/p1.jpg" class="p-img-front" alt="Front">
                                 <!--Backt img-->
-                                <img src="img/p1.2.jpg" class="p-img-back" alt="">
+                                 <img src="img/p1.2.jpg" class="p-img-back" alt="">
                               </a>
                             </div>
                           </div>
@@ -134,7 +205,7 @@
             </table>
         </div>
         <div class="d-grid grbtn">
-            <button class="checkout">Checkout</button>
+            <button class="checkout" onclick="togglecheck()">Proceed to Checkout</button>
             <button class="continue">Continue shopping</button>
         </div>
     </div>

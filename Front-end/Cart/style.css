@@ -110,22 +110,7 @@ th:last-child
 {
     text-align: right;
 }
-@media only screen and (max-width: 600px) { 
-    .cart-info p
-    {
-        display: none;
-    }
-    .total-price
-    {
-        display: flex;
-        justify-content: center;
-    }
-    .grbtn
-    {
-        display: flex;
-        justify-content: center;
-    }
-}
+
 .checkout, .continue
 {
     border: none;
@@ -152,4 +137,232 @@ th:last-child
 .grbtn
 {
     float: inline-end;
+}
+.addressform {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+
+.addressform form {
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.addressform form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.addressform form .row .col {
+    flex: 1 1 250px;
+    display: inline-block;
+    width: 48%; 
+    margin-right: 2%; 
+    box-sizing: border-box;
+}
+.addressform form .row .col:last-child {
+    margin-right: 0; 
+}
+.addressform form .row .col .title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.addressform form .row .col .inputbox {
+    margin: 15px 0;
+}
+
+.addressform form .row .col .inputbox span {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.addressform form .row .col .inputbox input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.addressform form .row .col .inputbox input:focus {
+    border: 1px solid #000;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #27ae60;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+}
+.submit-btn:hover{
+    background: #2ecc71;
+}
+.select {
+    margin: 15px 0;
+}
+
+.select label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.select select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #555;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.select select:focus {
+    border-color: #000;
+}   
+.form-check-label
+{
+    width: 400px;
+    height: auto;
+}
+.form-check-label img
+{
+    width: auto;
+    height: 80px
+}
+.method
+{
+    margin-top: 40px;
+    display: flex;
+}
+.method img
+{
+    margin-left: 15px;
+}
+.method input
+{
+    margin-top: 20px;
+    border: 1px #555 solid;
+}
+.total
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total p{
+    margin-top: 8px;
+    font-size: 20px;
+    float: right;
+}
+.total h4
+{
+    float: inline-start;
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.header1 {
+    display: none;
+    align-items: center;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.bi {
+    cursor: pointer;
+}
+.header svg
+{
+    margin-bottom: 30px;
+}
+.header h3
+{
+    margin-bottom: 25px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+@media only screen and (max-width: 600px) { 
+    .header svg 
+    {   
+        display: none;
+    }
+    .header1
+    {
+        display: flex;
+    }
+    .header h3
+    {
+        margin-bottom: 0;
+    }
+    .cart-info p
+    {
+        display: none;
+    }
+    .total-price
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .grbtn
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        justify-items: center;
+    }
+    .addressform form {
+        width: 100%;
+    }
+    .checkout, .continue {
+        align-items: center;
+    }
+    .addressform
+    {
+        align-items: center;    
+    }
+    .addressform form .row .col {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .total, .total h4, .total p {
+        float: none;
+        text-align: center;
+    }
 }
