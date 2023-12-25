@@ -9,7 +9,7 @@
 }
 .menu_option {
   box-shadow: 0 3px 8px rgb(0 0 0 / 15%);
-  height: 160vh;
+  height: 150vh;
   background:darkslategrey ;
   width: 80%;
   float: left;
@@ -225,11 +225,12 @@ center h3 {
   }
   .menu_option
   {
-    width: 110%;
+    width: 100%;
     height: 100vh;
   }
   .menu
-  {height: 100vh;}
+  {
+    height: 100vh;}
   .content 
   {
     float: inline-end;
