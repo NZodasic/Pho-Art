@@ -328,7 +328,7 @@ header {
 {
     padding: 10px;
     margin-top: 10px;
-    width: 500px;
+    width: 500px;   
     border-radius: 5px;
     height: 50px;
 }
@@ -392,13 +392,14 @@ header {
 }
 .background
 {
-    display: none;
     position: fixed;
-    z-index: 1100;
-    width: 100vw;
-    height: 190vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5); 
-    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 .rpmenumain a
 {
