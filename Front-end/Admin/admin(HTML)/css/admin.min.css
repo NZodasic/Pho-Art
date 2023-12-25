@@ -9,7 +9,7 @@
 }
 .menu_option {
   box-shadow: 0 3px 8px rgb(0 0 0 / 15%);
-  height: 150vh;
+  height:100% ;
   background:darkslategrey ;
   width: 80%;
   float: left;
@@ -202,19 +202,155 @@ center h3 {
   width: 75px;
   font-size: 16px;
 }
-@media(width: 520px)
+.addform
 {
-  .menu_option
-  {
-    width: 200%;
-  }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 60%;
+  border-radius: 10px;
+}
+.p-des textarea
+{
+  width: 100%;
+}
+.addform form
+{
+  padding: 15px 15px 15px 15px;
+}
+#des
+{
+  padding: 8px;
+}
 
+.priceandcate
+{
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+.addtitle
+{
+  text-align: center;
+  margin: 30px 0px 30px;
+}
+.title  
+{
+  font-size: 17px;
+  color: gray;
+  display: block;
+}
+.p-des textarea{
+  padding: 3px;
+  border-radius:5px;
+  box-sizing: border-box;
+}
+.p-name input
+{
+  width: 100%;
+  padding: 5px;
+  border-radius:5px;
+  border: solid 1px gray;
+  box-sizing: border-box;
+}
+.subcan 
+{
+  margin-top: 50px;
+}
+.subcan button
+{
+  color: white;
+  background: #0059ff;
+  border: none;
+  outline: none;
+  width: 130px;
+  padding: 7px;
+  border-radius: 7px  ;
+}
+.subcan a
+{
+  margin-left: 15px;
+  text-decoration: none;
+}
+.addprice input
+{
+  width: 100%;
+  border-radius:5px;
+  border: solid 1px gray;
+  box-sizing: border-box;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.cate select
+{
+  width: 200%;
+  border-radius:5px;
+  border: solid 1px gray;
+  box-sizing: border-box;
+  padding: 5px;
+  box-sizing: border-box;
+}
+#p-pic
+{
+  width: 200px;
+}
+#inputfile{
+  display: none;
+}
+.addbtn
+{
+  vertical-align:super;
+  text-align: center;
+  font-size: 12px;
+  background:#f6f9fc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1px 10px 15px;
+  color: #0059ff;
+  font-weight: 700;
+  border-radius: 7px;
+}
+.addbtn span
+{
+  font-size: 30px ;
+}
+.img img
+{
+  vertical-align: top;
+}
+.img label
+{
+  padding-left: 10px;
+}
+@media(max-width: 1077px){
+  .priceandcate
+  {
+    display: block;
+  }
+  .priceandcate select
+  {
+    width: 100%;
+  }
+  .subcan
+  {
+    justify-content: center;
+    text-align: center;
+  }
 }
 @media(max-width: 900px)
 {
+  .addform
+  {
+    width: 90%;
+  }
   .gradd 
   {
     display: flex;
+  }
+  .priceandcate
+  {
+    display: block;
+  }
+  .priceandcate select
+  {
+    width: 100%;
   }
   .turnover
   {
@@ -226,11 +362,11 @@ center h3 {
   .menu_option
   {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
   }
   .menu
   {
-    height: 100vh;}
+    height: fit-content;}
   .content 
   {
     float: inline-end;
@@ -246,6 +382,12 @@ center h3 {
   justify-content: space-between;
  margin-right: 10%;
 }
+}
+@media(max-width: 573px){
+  .menu_option
+  {
+    height: fit-content;
+  }
 }
 .dashboard-box1,.dashboard-box2,
 .dashboard-box3,.dashboard-box4{
@@ -382,68 +524,7 @@ tr:hover td
 .active-bg {
   background: #f3f3f3;
 }
-.menu_option-head2 {
-  margin-top: 20px;
-  background-color: var(--mainColor);
-  color: #fff;
-  text-align: start;
-  line-height: 32px;
-  padding: 10px;
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-.wrap-field {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  padding-right: 10px;
-  width: 70%;
-}
-.wrap-field > label {
-  margin-right: 10px;
-}
-.right-wrap-field {
-  width: 65%;
-}
-.right-wrap-field > input {
-  padding: 10px 0;
-}
-textarea#product-content {
-  width: 100%;
-  height: 200px;
-  padding: 10px;
-}
-.wrap-field2 {
-  display: block;
-  padding: 20px 0;
-  padding-right: 10px;
-}
-.right-wrap-field2 {
-  margin-top: 16px;
-}
-.save {
-  display: flex;
-  margin-top: 10px;
-}
-.cancel,
-.save > button {
-  border: none;
-  outline: 0;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: var(--mainColor);
-  margin-right: 10px;
-}
-.cancel {
-  background-color: #666 !important;
-  cursor: default !important;
-  text-decoration: none;
-}
-.save > button:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
+
 .col-md-3 {
   padding-left: 0 !important;
 }
