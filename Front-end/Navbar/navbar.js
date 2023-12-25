@@ -62,11 +62,13 @@ document.addEventListener('DOMContentLoaded', function() {
     setting_item1.onclick = (()=>{
         setting_drop1.style.marginLeft = '-320px';
         setting_drop1.style.display = 'block';
+        submenu1.classList.add('disable');
     });
     //Responsive back from setting to menu
     backset1.onclick = (()=>{
         setting_drop1.style.marginLeft = '320px';
         setting_drop1.style.display = 'none';
+        submenu1.classList.remove('disable');
     });
     //Responsive foward to help
     help_item1.onclick = (()=>{
