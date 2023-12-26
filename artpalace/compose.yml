@@ -1,0 +1,21 @@
+version: "1"
+
+services:
+  chatapp:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8000
+    volumes:
+    # Sync code local to docker container when code change
+      - ./:/app
+  mysql-db:
+    image: mysql
+    restart: always
+    environment:
+      - MYSQL_DATABASE=test
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    volumes:
+    #At your sql file to create the tables. More detail: https://stackoverflow.com/questions/49573004/create-tables-on-docker-start
+      - ./dump:/docker-entrypoint-initdb.d
